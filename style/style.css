@@ -1,0 +1,163 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+
+/* NAV */
+
+.nav-logo {
+    height: 150px;
+    width: auto;
+    margin-right: 30px;
+    margin-left: 140px;
+}
+
+#nav {
+    background-color: white!important;
+    width: 100%;
+    -webkit-box-shadow: 0 2px 3px rgba(119, 119, 119, 0.1);
+    -moz-box-shadow: 0 2px 3px rgba(119, 119, 119, 0.1);
+    box-shadow: 0 2px 3px rgba(119, 119, 119, 0.1);
+}
+
+.nav-link {
+    text-transform: uppercase;
+    color: #86D3FF!important;
+}
+
+.nav-right {
+    text-transform: uppercase;
+    color: black!important;
+}
+
+#nav-right {
+    position: relative;
+    right: -7%;
+    top: 0;
+}
+
+
+/* NAV */
+
+
+
+/* Deed Selection */
+
+#deed-section {
+    margin-top: 50px;
+}
+
+.deed-choice {
+    background-color: #25aae2;
+    border-radius: 5px;
+    height: 180px;
+    width: auto;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 6px 9px rgba(119, 119, 119, 0.5);
+    -moz-box-shadow: 0 6px 9px rgba(119, 119, 119, 0.5);
+    box-shadow: 0 6px 9px rgba(119, 119, 119, 0.5);
+}
+
+.deed-choice:hover {
+    background-color: #25ace2c4;
+}
+
+#deed-section h5 {
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.7em;
+}
+
+#deed-section p {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1em;
+}
+
+#deed-section a:hover {
+    text-decoration: none;
+}
+
+/* Deed Selection */
+
+
+
+/* Confirmation Section */
+
+#confirmation-section h3 {
+    color: #2e3193;
+    font-size: 4em;
+    font-weight: bold;
+    margin-top: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+#confirmation-section p {
+    color: #25aae2;
+    font-size: 1.4em;
+    position: relative;
+    z-index: 2;
+}
+
+#confirmation-section img {
+    width: 50%;
+    height: auto;
+    margin-top: -50px;
+}
+
+#download-section {
+    height: 80px;
+    width: 100%;
+    background-color: #2e3193;
+    position: relative;
+    z-index: 2;
+}
+
+.blue-btn {
+    border-radius: 5px;
+    background: linear-gradient(to bottom,#6bc1f7 0,#0da0db 100%);
+    padding: 5px 15px;
+    font-size: 24px;
+    font-family: "Myriad Pro Regular";
+    color: #fff;
+}
+
+.blue-btn:hover {
+    color: #fff;
+    background: #6bc1f7;
+    background: -moz-linear-gradient(top,#6bc1f7 0,#009bd8 31%);
+    background: -webkit-linear-gradient(top,#6bc1f7 0,#009bd8 31%);
+    background: linear-gradient(to bottom,#6bc1f7 0,#009bd8 31%);
+}
+
+.btn {
+    border: 1px solid transparent;
+    user-select: none;
+    touch-action: manipulation;
+    cursor: pointer;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    margin-bottom: 0;
+    display: inline-block;
+}
+
+#download-btn {
+    position: relative;
+    top: 40%;
+    left: 2%;
+    width: 100%;
+}
+
+/* Confirmation Section */
+
