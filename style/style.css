@@ -91,20 +91,28 @@ body, html{
 
 /* Confirmation Section */
 
-#confirmation-section h3 {
-    color: #2e3193;
-    font-size: 4em;
-    font-weight: bold;
-    margin-top: 50px;
+#confirmation-section {
+    background-color: #5cd1ff;
+    height: 500px!important;
     position: relative;
-    z-index: 2;
+}
+
+#confirmation-section h3 {
+    color: white;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+    font-size: 3.4em;
+    font-weight: bold;
+    margin-top: 20px;
+    position: relative;
+    z-index: 4;
 }
 
 #confirmation-section p {
-    color: #25aae2;
-    font-size: 1.4em;
+    color: white;    
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+    font-size: 1.2em;
     position: relative;
-    z-index: 2;
+    z-index: 4;
 }
 
 #confirmation-section img {
@@ -159,5 +167,157 @@ body, html{
     width: 100%;
 }
 
+#objects {
+    position: absolute;
+    top: 35%;
+}
+
+#cloud-1 {
+    position: relative;
+    bottom: 5px;
+    margin-left: 140%;  
+    animation: moveSlideshow-1 45s linear infinite;
+}
+
+#cloud-2 {
+    position: relative;     
+    bottom: 130px;
+    margin-left: 70%;
+    animation: moveSlideshow-2 44s linear infinite;
+}
+
+#cloud-3 {
+    position: relative;    
+    bottom: 320px;    
+    margin-left: 60%;
+    animation: moveSlideshow-3 40s linear infinite;
+}
+
+#cloud-dis {
+    position: relative;    
+    bottom: 490px;  
+    margin-left: 100px;  
+    -webkit-animation: disappear 21s normal forwards;
+    animation: disappear 21s normal forwards;
+    
+}
+
+#office {
+    position: absolute;
+    bottom: 0!important;
+    left: 30%;
+    z-index: 0;
+    width: 40%!important;
+    height: auto;
+}
+
+#deed {
+    position: absolute;
+    bottom: 0!important;
+    left: 42%;
+    z-index: 1;
+    width: 0px!important;
+    height: auto;
+    opacity: 0.1;
+    animation: scaleOut 11s infinite; 
+}
+
+@keyframes scaleOut {
+    0% {
+        opacity: 0.1;
+        width: 0px;
+        bottom: 40px;
+        left: 50%;
+    }
+    10% {
+        opacity: 0.1;
+        width: 0px;
+        bottom: 40px;
+        left: 50%;
+    }
+    20% {
+        opacity: 1;
+        width: 250px;
+        bottom: 50px;
+        left: 75%;
+    }
+    80% {
+        opacity: 1;
+        width: 250px;
+        bottom: 50px;
+        left: 75%;
+    }
+    90% {
+        opacity: 0.1;
+        width: 0px;
+        bottom: 40px;
+        left: 50%;
+    }
+    100% {
+        opacity: 0.1;
+        width: 0px;
+        bottom: 40px;
+        left: 50%;
+    }
+}
+
+
+@keyframes moveSlideshow-1 {
+    100% { 
+        transform: translateX(-305%);  
+    }
+}
+
+@keyframes moveSlideshow-2 {
+    100% { 
+        transform: translateX(-240%);  
+    }
+}
+
+@keyframes moveSlideshow-3 {
+    100% { 
+        transform: translateX(-250%);  
+    }
+}
+
+@-webkit-keyframes disappear{
+    from {margin-left: 100px}
+    to {margin-left: -600px}
+}
+
+@keyframes disappear{
+from {margin-left: 100px}
+to {margin-left: -600px}
+}
+
+     
+
+
 /* Confirmation Section */
 
+
+#animate-area	{ 
+	width: 100%; 
+	height: 400px; 
+	background-image: url("../images/clouds-bg.png");
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+	animation: animatedBackground .8s linear infinite;
+}
+
+/* @keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+} */
+
+#filler-bottom {
+    height: 1000px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #f5f5f5;
+}
