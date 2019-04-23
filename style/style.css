@@ -215,7 +215,6 @@ body, html{
     position: absolute;
     bottom: 0!important;
     left: 42%;
-    z-index: 1;
     width: 0px!important;
     height: auto;
     opacity: 0.1;
