@@ -53,9 +53,11 @@ body, html{
 }
 
 .deed-choice {
+    position: relative;
     background-color: #25aae2;
     border-radius: 5px;
-    height: 180px;
+    z-index: 0;    
+    height: 320px;
     width: auto;
     margin-bottom: 20px;
     -webkit-box-shadow: 0 6px 9px rgba(119, 119, 119, 0.5);
@@ -65,6 +67,20 @@ body, html{
 
 .deed-choice:hover {
     background-color: #25ace2c4;
+}
+
+.deed-choice:hover .selection-pic {
+    opacity: .75;
+}
+
+.selection-pic {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: auto; 
+    z-index: 2;  
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px; 
 }
 
 #deed-section h5 {
@@ -85,7 +101,13 @@ body, html{
     text-decoration: none;
 }
 
+
+
 /* Deed Selection */
+
+
+
+
 
 
 
@@ -207,9 +229,9 @@ body, html{
 #office {
     position: absolute;
     bottom: 0!important;
-    left: 28%;
+    left: 32%;
     z-index: 3;
-    width: 40%!important;
+    width: 36%!important;
     height: auto;
 }
 
