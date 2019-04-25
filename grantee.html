@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fast deed</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style/style.css" type="text/css">
+</head>
+<body>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
+                <a class="navbar-brand" href="#"><img src="images/fdlogo.png" class="nav-logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Create deed</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">services</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">FAQ's</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="collapse navbar-collapse" id="nav-right">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link nav-right" href="#">(480) 338-9400</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-right" href="#">HELP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-right" href="#"><i class="fas fa-search"></i></a>
+                        </li>
+                    </ul>
+                </div>
+              </nav>
+
+              <div class="container header-section" id="grantee-header">
+                <h5>Tell us about who this property will transfer to</h5>
+              </div>
+
+              <div class="container user-flow-container">
+                <div class="user-container-top">
+                  <div class="user-container-label">Owners - 123 Main Street, Orlando, Fl</div>
+                </div>
+                <div class="container">
+                  <form>
+                    <div class="form-row">
+                        <div class="form-group col-sm-12">
+                          <input type="text" class="form-control ng-invalid ng-invalid-required nv-valid-minlength" id="granteeName" name="reqestorName" placeholder="Name" ng-model="deed.granteeName" ng-minlength="3" required autofocus>
+                          <input type="text" class="form-control ng-invalid ng-invalid-required nv-valid-minlength" id="granteePhone" name="reqestorPhone" placeholder="Phone Number" ng-model="deed.granteePhone" ng-minlength="3" required >
+                          <input type="text" class="form-control ng-invalid ng-invalid-required nv-valid-minlength" id="granteeEmail" name="reqestorEmail" placeholder="Email Address" ng-model="deed.granteeEmail" ng-minlength="3" required >   
+                          <select id="granteeType" name="granteeType" class="form-control">
+                              <option value="An Unmarried Man">An Unmarried Man</option>
+                              <option value="An Unmarried Woman">An Unmarried Woman</option>
+                              <option value="A Married Man">A Married Man</option>
+                              <option value="A Married Woman">A Married Woman</option>
+                              <option value="A Widow">A Widow</option>
+                              <option value="A Widower">A Widower</option>
+                              <option value="Trust">Trust</option>
+                              <option value="LLC">Limited Liability Company</option>
+                              <option value="Corporation">Corporation</option>
+                              <option value="Partnership">Partnership</option>
+                              <option value="Estate">Estate</option>
+                          </select>                       
+                        </div>
+                      </div>
+                      <br>
+                      <div class="row">
+                          <div class="col-md-6 col-sm-12">
+                                <button type="button" class="btn user-flow-btn">Add Owner</button>
+                          </div>
+                          <div class="col-md-6 col-sm-12">
+                                <button type="button" class="btn user-flow-btn">Continue</button>
+                          </div>
+                      </div>
+                      <table class="table-borderless table-added-selection">
+                            <tbody>
+                                <tr>
+                                    <td>John</td>
+                                    <td><a href="#"><button class="btn btn-remove">Remove</button></a></td>
+                                </tr>
+                                <tr>
+                                      <td>John</td>
+                                      <td><a href="#"><button class="btn btn-remove">Remove</button></a></td>
+                                </tr>
+                                <tr>
+                                  <td>John</td>
+                                  <td><a href="#"><button class="btn btn-remove">Remove</button></a></td>
+                                </tr>
+                                <tr>
+                                  <td>John</td>
+                                  <td><a href="#"><button class="btn btn-remove">Remove</button></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                  </form>
+                </div>
+              </div>
+
+ 
+
+            <div id="footer">
+                    
+            </div>
+</body>
+</html>

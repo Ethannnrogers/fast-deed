@@ -47,54 +47,34 @@
                 </div>
               </nav>
 
-
-
-              <div id="confirmation-section" >
-                <div class="container sliding-background">
-                  <div id="objects">
-                <img src="images/confirmation-page/cloud-1.png" id="cloud-1" class="clouds">
-                <img src="images/confirmation-page/cloud-2.png" id="cloud-2" class="clouds">
-                <img src="images/confirmation-page/cloud-3.png" id="cloud-3" class="clouds">
-                <img src="images/confirmation-page/cloud-dis.png" id="cloud-dis" class="clouds">
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-12 text-center">
-                      <h3>Success!</h3>
-                      <p>Your order is in production and we will send you an email notification to sign upon completion.</p>
-                    </div>
-                  </div>
-                </div>
-                <img src="images/confirmation-page/deed.gif" id="deed">
-                <img src="images/confirmation-page/skyline.png" id="skyline">
-                <img src="images/confirmation-page/office-building.png" id="office">
-                
+              <div class="container header-section" id="personal-header">
+                <h5>Tell us a little about you</h5>
               </div>
 
-
-
-              <!-- <div id="animate-area">
-
-              
-              </div> -->
-
-              <div id="filler-bottom"></div>
-            
-
-              <!-- <div id="download-section">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-sm-4 offset-sm-4">
-                      <a id="download-btn" href="#" class="btn blue-btn">Download Deed</a>
-                    </div>
-                  </div>
+              <div class="container user-flow-container">
+                <div class="user-container-top">
+                  <div class="user-container-label">Deed - 123 Main Street, Orlando, Fl</div>
                 </div>
-              </div> -->
-             
+                <div class="container">
+                  <form>
+                    <div class="form-row">
+                        <div class="form-group col-sm-12">
+                          <!-- <label for="requestorName">Enter Your Name</label> -->
+                          <input type="text" class="form-control ng-invalid ng-invalid-required nv-valid-minlength" id="requestorName" name="reqestorName" placeholder="Name" ng-model="deed.requestorName" ng-minlength="3" required autofocus>
+                          <input type="text" class="form-control ng-invalid ng-invalid-required nv-valid-minlength" id="requestorPhone" name="reqestorPhone" placeholder="Phone Number" ng-model="deed.requestorPhone" ng-minlength="3" required >
+                          <input type="text" class="form-control ng-invalid ng-invalid-required nv-valid-minlength" id="requestorEmail" name="reqestorEmail" placeholder="Email Address" ng-model="deed.requestorEmail" ng-minlength="3" required >                          
+                        </div>
+                      </div>
+                      <button type="button" class="btn user-flow-btn">Continue</button>
+                  </form>
+                  <div class="col text-right active-account-text">Already have an account? <a href="#">Log in Here</a></div>
+                </div>
+              </div>
+
  
 
-              <div id="footer">
-
-              </div>
-    
+            <div id="footer">
+                    
+            </div>
 </body>
 </html>
