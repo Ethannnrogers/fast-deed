@@ -633,9 +633,17 @@ tr {
         font-size: 1.7em;
     }
 
+    #property-header {
+        padding-top: 40px!important;
+    }
+
+    #grantee-header {
+        padding-top: 50px!important;
+    }
+
     .header-section {
-        height: 200px;
-        padding-top: 85px;
+        height: 160px;
+        padding-top: 60px;
     }
 
     #property-header h5 {
@@ -656,3 +664,4 @@ tr {
         margin-left: 40%;
         }
 }
+
