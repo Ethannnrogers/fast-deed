@@ -57,7 +57,7 @@ body, html{
     background-color: #25aae2;
     border-radius: 5px;
     border: 3px solid white;
-    z-index: 0;    
+    z-index: 0;
     height: 335px;
     width: auto;
     margin-bottom: 20px;
@@ -78,10 +78,10 @@ body, html{
     position: absolute;
     width: 100%;
     bottom: 0;
-    height: auto; 
-    z-index: 2;  
+    height: auto;
+    z-index: 2;
     border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px; 
+    border-bottom-left-radius: 5px;
 }
 
 #deed-section h5 {
@@ -98,7 +98,7 @@ body, html{
     padding: 10px;
     font-size: 1em;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
-    
+
 }
 
 #deed-section a:hover {
@@ -112,7 +112,7 @@ body, html{
     #deed-section p {
         font-size: .8em;
     }
-    
+
 }
 
 @media only screen and (max-width: 575px) {
@@ -167,7 +167,7 @@ body, html{
     font-size: 1.5em;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
     padding-top: 9px;
-    text-align: center;  
+    text-align: center;
 }
 
 .location-form-label h5 {
@@ -246,7 +246,7 @@ body, html{
 }
 
 #confirmation-section p {
-    color: white;    
+    color: white;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
     font-size: 1.2em;
     position: relative;
@@ -313,31 +313,31 @@ body, html{
 #cloud-1 {
     position: relative;
     bottom: 5px;
-    margin-left: 140%;  
+    margin-left: 140%;
     animation: moveSlideshow-1 45s linear infinite;
 }
 
 #cloud-2 {
-    position: relative;     
+    position: relative;
     bottom: 130px;
     margin-left: 70%;
     animation: moveSlideshow-2 44s linear infinite;
 }
 
 #cloud-3 {
-    position: relative;    
-    bottom: 320px;    
+    position: relative;
+    bottom: 320px;
     margin-left: 60%;
     animation: moveSlideshow-3 40s linear infinite;
 }
 
 #cloud-dis {
-    position: relative;    
-    bottom: 490px;  
-    margin-left: 100px;  
+    position: relative;
+    bottom: 490px;
+    margin-left: 100px;
     -webkit-animation: disappear 21s normal forwards;
     animation: disappear 21s normal forwards;
-    
+
 }
 
 #office {
@@ -357,7 +357,7 @@ body, html{
     width: 0%!important;
     height: auto;
     opacity: 0.1;
-    animation: scaleOut 11s infinite; 
+    animation: scaleOut 11s infinite;
 }
 
 #skyline {
@@ -410,20 +410,20 @@ body, html{
 
 
 @keyframes moveSlideshow-1 {
-    100% { 
-        transform: translateX(-305%);  
+    100% {
+        transform: translateX(-335%);
     }
 }
 
 @keyframes moveSlideshow-2 {
-    100% { 
-        transform: translateX(-240%);  
+    100% {
+        transform: translateX(-250%);
     }
 }
 
 @keyframes moveSlideshow-3 {
-    100% { 
-        transform: translateX(-250%);  
+    100% {
+        transform: translateX(-255%);
     }
 }
 
@@ -437,15 +437,56 @@ from {margin-left: 100px}
 to {margin-left: -600px}
 }
 
-     
+@media only screen and (min-width: 1550px) {
+    #objects {
+        top: 15%!important;
+    }
+}
+
+@media only screen and (max-width: 1225px) {
+    #objects {
+       top: 55%;
+    }
+}
+
+@media only screen and (max-width: 997px) {
+    #objects {
+        top: 65%;
+     }
+}
+
+@media only screen and (max-width: 776px) {
+    #confirmation-section {
+        height: 330px!important;
+    }
+    .clouds {
+        bottom: 70px!important;
+    }
+    #cloud-3 {
+        bottom: 140px!important;       
+    }
+    #cloud-dis {
+        bottom: 200px!important;
+    }
+}
+
+@media only screen and (max-width: 595px) {
+    #confirmation-section {
+        height: 300px!important;
+    }
+    .clouds {
+        bottom: 50px!important;
+    }
+}
+
 
 
 /* Confirmation Section */
 
 
-#animate-area	{ 
-	width: 100%; 
-	height: 400px; 
+#animate-area	{
+	width: 100%;
+	height: 400px;
 	background-image: url("../images/clouds-bg.png");
 	background-position: 0px 0px;
 	background-repeat: repeat-x;
@@ -560,7 +601,7 @@ to {margin-left: -600px}
     padding-top: 25px;
     padding-left: 10px;
     padding-right: 10px;
-    
+
 }
 
 .user-flow-container label {
@@ -569,7 +610,7 @@ to {margin-left: -600px}
 
 .user-flow-container input {
     margin-bottom: 20px;
-    
+
 }
 
 .user-container-label {
@@ -599,7 +640,7 @@ to {margin-left: -600px}
 .table-added-selection {
     margin-bottom: 30px;
     /* margin-left: 37%; */
-    border-top: 1px solid black;   
+    border-top: 1px solid black;
     width: 100%;
 }
 
@@ -665,3 +706,73 @@ tr {
         }
 }
 
+
+
+
+
+/* Checkout */
+
+.table > tbody > tr {
+    height: 70px;
+}
+
+.table > tbody > tr > .emptyrow {
+    border-top: none;
+}
+
+.table > thead > tr > .emptyrow {
+    border-bottom: none;
+}
+
+.table > tbody > tr > .highrow {
+    border-top: 3px solid;
+}
+
+#coupon-input-td {
+    border-top: 1px solid black;
+    margin-left: 30px!important;
+}
+
+.lastrow {
+    border-top: 1px solid black!important;
+}
+
+.btn-coupon {
+    background-color: #25aae2!important;
+    color: white;
+    width: 100%;
+}
+
+.btn-coupon:hover {
+    color: white;
+    background-color: #1988b4!important;
+}
+
+#promo-label {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-top: 15px;
+}
+
+#order-summary-section {
+    margin-top: 75px;
+}
+
+#cbtn {
+    margin-top: 30px!important;
+}
+
+#checkout-row {
+    border-bottom: none;
+}
+
+#panel-heading {
+    background-color: #25aae2;
+    color: white;
+    height: 100px;
+    padding-top: 30px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    
+}
